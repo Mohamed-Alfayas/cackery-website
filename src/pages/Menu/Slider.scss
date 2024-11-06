@@ -1,0 +1,70 @@
+// @import "assets/styles/variable.scss";
+// @import "assets/styles/mixins.scss";
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+// * {
+//     background-color: aquamarine;
+// }
+.text-theme{
+    color: #FF5B83;
+    font-weight: 700;
+}
+
+.product-preview {
+    .slider-vertical{
+        margin: auto;
+    }
+
+        .product-slider {
+    
+            .slick-prev:before,
+            .slick-next:before {
+                color: #FF5B83;
+            }
+
+            .slick-prev {
+                left: 35px;
+                top: -25px;
+                transform: translateY(-50%) rotate(-90deg);
+            }
+            .slick-next {
+                left: 35px;
+                bottom: -45px;
+                top: auto;
+                transform: translateY(-50%) rotate(-90deg);
+            }
+    
+            .slick-thumb {
+                img {
+                    width: 100px;
+                    height: 100px;
+                    border-radius: 10px;
+                }
+            }
+    
+            .slider-item {
+                border: 2px solid transparent;
+    
+                img {
+                    border-radius: 10px;
+                    width: 100%;
+                }
+    
+                &:focus-visible,
+                &.active {
+                    border: 2px solid #FF5B83;
+                    outline: #FF5B83;
+                    border-radius: 10px;
+                }
+    
+            }
+        }
+
+    .product-view-full {
+        width: 100%;
+        border-radius: 10px;
+    }
+}
+
+

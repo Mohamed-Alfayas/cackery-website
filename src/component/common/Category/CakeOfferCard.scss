@@ -1,0 +1,25 @@
+
+.cake-offer-card{
+  &:hover{
+    transform: scale(1.02);
+  }
+  .cake-image{
+    height: 225px;
+    transition: transform .2s;
+    
+  }
+  .cake-price-section{
+    padding: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .cake-offer-card{
+    .cake-image{
+      height: 150px;
+    }
+    .cake-price-section{
+      padding: 1rem;
+    }
+  }
+}

@@ -1,0 +1,93 @@
+.container {
+    /* display: flex; */
+}
+
+.chefImg {
+    background-color: #006770;
+    /* margin-top: 30px; */
+    border-radius: 30px;
+}
+
+.sign-up-section {
+
+    .title {
+        font-size: 44px;
+        font-weight: 600;
+        line-height: 66px;
+        letter-spacing: -0.03em;
+        text-align: center;
+        margin-bottom: 0rem;
+    }
+
+    .desc {
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 18px;
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+
+    .right-side-image {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .chefImage {
+        border-radius: 56px;
+
+        img {
+            max-height: 500px;
+            border-radius: 16px;
+        }
+    }
+}
+
+.login-container {
+    height: 95vh;
+    display: flex;
+    align-items: center;
+
+    .inner-container {
+        padding: 2rem 1rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #f9f9f9;
+        border-radius: 50px;
+
+        .left-box {
+            padding: 4rem;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .login-container,
+    .inner-container {
+        height: 100%;
+
+        .chefImage {
+            border-radius: 10px;
+            padding: 0;
+
+            img {
+                max-height: 120px;
+
+            }
+        }
+
+        .title {
+            font-size: 24px;
+        }
+
+        .inner-container {
+            margin: 1rem;
+
+            .left-box {
+                padding: 1rem;
+            }
+        }
+    }
+}

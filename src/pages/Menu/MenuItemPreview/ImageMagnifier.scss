@@ -1,0 +1,24 @@
+.image-container {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+}
+
+.image {
+  display: block;
+  max-width: 100%;
+}
+
+.magnifier {
+  position: absolute;
+  border: 3px solid #828181;
+  border-radius: 50%;
+  width: 125px;
+  height: 125px;
+  background-repeat: no-repeat;
+  background-size: 200% 200%;
+  pointer-events: none;
+  cursor: none;
+  z-index: 10;
+  transform: translate(-50%, -50%);
+}

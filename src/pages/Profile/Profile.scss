@@ -1,0 +1,131 @@
+.profile-edit-update-btn {
+    background: linear-gradient(90deg, #FF1E54 0%, #FF5B83 100%);
+    text-transform: capitalize;
+    border-radius: 10px;
+}
+
+.profile-card {
+    .MuiPaper-rounded {
+        border-radius: 24px;
+    }
+    .MuiDialogContent-dividers{
+        border-top: 0px !important;
+    }
+
+    .profile-text {
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 16px;
+        letter-spacing: 0.02em;
+        text-align: left;
+
+    }
+
+    input,
+    textarea {
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 22px;
+        text-align: left;
+    }
+}
+
+.profile-section-page{
+    .profile-short{
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: row;
+        box-shadow: 0px 0px 5px #a6a6a6;
+        border: none;
+        .MuiAvatar-root{
+            margin-right: 0.5rem;
+        }
+        span{
+            font-size: 12px;
+            color: #808080;
+        }
+        .name{
+            font-size: 15px;
+            color: black;
+            text-transform: capitalize;
+            font-weight: 600;
+        }
+    }
+    .profile-side-navs{
+        // padding: 1rem !important;
+        box-shadow: 0px 0px 5px #a6a6a6;
+        border: none;
+        .MuiTabs-vertical{
+            border-radius: 5px;
+        }
+        .MuiTabs-indicator{
+            display: none;
+        }
+        .item{
+            font-size: 14px;
+            font-weight: 500;
+            max-width: none;
+            align-items: flex-start;
+            cursor: pointer;
+            text-transform: capitalize;
+            color: #808080;
+
+            &.Mui-selected{
+                border-left: 2px solid #FF5B83;
+                border-right: 0;
+                background: #FF5B83;
+                color: #ffffff;
+            }
+        }
+    }
+    .profile-main{
+        box-shadow: 0px 0px 5px #a6a6a6;
+        border: none;
+        .card-header{
+            font-size: 14px;
+            font-weight: 600;
+            color: #fff;
+            background-color: #FF5B83;
+        }
+        .profile-picture{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            
+        }
+    }
+    .manage-address{
+        box-shadow: 0px 0px 5px #a6a6a6;
+        border: none;
+        .card-header{
+            font-size: 14px;
+            font-weight: 600;
+            color: #fff;
+            background-color: #FF5B83;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+    }
+    .my-orders-main{
+        box-shadow: 0px 0px 5px #a6a6a6;
+        border: none;
+        .card-header{
+            font-size: 14px;
+            font-weight: 600;
+            color: #fff;
+            background-color: #FF5B83;
+        }
+    }
+    .my-reviews-main{
+        box-shadow: 0px 0px 5px #a6a6a6;
+        border: none;
+        .card-header{
+            font-size: 14px;
+            font-weight: 600;
+            color: #fff;
+            background-color: #FF5B83;
+        }
+    }
+}

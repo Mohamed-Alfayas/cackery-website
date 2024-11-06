@@ -1,0 +1,9 @@
+@mixin gradient-pink {
+  background: linear-gradient($primary-pink, $secondary-pink);
+}
+@mixin gradient-text {
+  @include gradient-pink;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

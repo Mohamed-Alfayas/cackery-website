@@ -1,0 +1,172 @@
+@import "../../../assets/styles/variable.scss";
+@import "../../../assets/styles/mixins.scss";
+
+.navbar_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: $navbar-height;
+  width: 100vw;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+
+  .navbar-toggler{
+    border: none;
+    .navbar-toggler-icon {
+      width: 1.5rem;
+      height: 1.5rem;
+    }
+    &:focus{
+      box-shadow: none !important; 
+    }
+
+  }
+
+  .cart-badge{
+    .MuiBadge-badge{
+      right: 0.25rem;
+    }
+  }
+  
+
+  .wrapper {
+    width: 95%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .logo {
+      color: black;
+      font-size: 1.5rem;
+      font-weight: 600;
+
+      span {
+        @include gradient-text;
+      }
+    }
+
+    .links {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      margin: 0;
+
+      .nav-link,
+      .link {
+        font-weight: 500;
+        color: $light-gray;
+        font-size: 15px;
+        display: flex;
+
+        &.active {
+          @include gradient-text;
+        }
+
+        img {
+          width: 1.5rem;
+          height: 1.5rem;
+          margin-right: 5px;
+        }
+      }
+    }
+
+    .others {
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+      margin: 0;
+
+      .link {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+
+        span {
+          color: $dark-gray;
+          font-weight: 500;
+        }
+      }
+
+      img {
+        width: 1.5rem;
+        height: 1.5rem;
+        margin-right: 5px;
+      }
+    }
+  }
+  
+}
+
+.profile-menu-item{
+  p {
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 27px;
+      text-align: left;
+      color: #1A1A1A;
+    }
+}
+
+
+@media screen and (max-width: 991px) {
+
+  .navbar_container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: $navbar-height;
+    padding: 0 !important;
+
+    .navbar-toggler{
+      padding-left: 0;
+    }
+
+    .wrapper {
+
+      justify-content: left !important;
+
+      padding: 0.5rem 1rem;
+      background-color: white;
+      z-index: 99;
+      width: 100%;
+      // box-shadow: 0px 0px 10px #000;
+      .navbar-collapse{
+        padding: 1rem 0px;
+      }
+        .theme-logo {
+          font-size: 20px;
+          font-weight: 600;
+          line-height: 30px;
+          text-align: left;
+        }
+      }
+  }
+  
+}
+
+
+
+@media screen and (min-width: 992px) {
+  .right-side-nav-desktop{
+    display: block;
+  }
+  .right-side-nav-mobile{
+    display: none !important;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .right-side-nav-desktop{
+    display: none !important;
+  }
+  .right-side-nav-mobile{
+    display: flex !important;
+    justify-content: flex-end;
+    flex-direction: row !important;
+    margin-left: auto !important;
+  }
+}

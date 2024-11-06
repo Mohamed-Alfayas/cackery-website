@@ -1,0 +1,313 @@
+@import "../../../assets/styles/variable";
+@import "../../../assets/styles/mixins.scss";
+
+.rs-symbol {
+  font-family: 'inter';
+}
+
+.cake-menu-item-view {
+
+  .slider-container {
+    margin: auto 0;
+  }
+
+  .slick-slider {
+    padding: 2.5rem 0.5rem !important;
+    position: relative;
+
+    .slick-track {
+      height: 100% !important;
+      width: 100% !important;
+      // margin-left: 0.5rem;
+      // margin-right: 50%;
+      // left: 1.5rem !important;
+    }
+
+    .slick-slide {
+      width: 100% !important;
+      height: 70px !important;
+
+      &.slick-current {
+        img {
+          border: 2px solid #FF1E54;
+        }
+      }
+
+      .cakeslider-img {
+        width: 80%;
+        height: 100%;
+        display: flex !important;
+        justify-content: center;
+
+        img {
+          border-radius: 10px;
+          object-fit: cover;
+          width: 65px;
+          height: 65px;
+          // width: 100%;
+          // height: 100%;
+
+        }
+      }
+    }
+
+    .slick-prev,
+    .slick-next {
+      position: absolute;
+      // background: red; 
+      left: 50%;
+      z-index: 2;
+
+      &::before {
+        color: black;
+      }
+    }
+
+    .slick-prev {
+      top: 0px;
+      transform: translateX(-50%) rotate(90deg);
+    }
+
+    .slick-next {
+      top: 95%;
+      transform: translateX(-50%) rotate(90deg);
+    }
+  }
+
+  .cakecontent-img {
+    width: 100%;
+    height: 500px;
+    // height: 100%;
+    object-fit: cover;
+    border-radius: 17px;
+  }
+
+  .cake-menu-info {
+    .cake-category {
+      font-size: 18px;
+      font-weight: 500;
+      line-height: 27px;
+      text-align: left;
+      color: #6B6B6B;
+    }
+
+    .cake-name {
+      font-size: 34px;
+      font-weight: 600;
+      line-height: 51px;
+      text-align: left;
+      color: #1A1A1A;
+    }
+
+    .cake-price {
+      font-size: 28px;
+      font-weight: 500;
+      line-height: 42px;
+      text-align: left;
+      color: #FF1E54;
+    }
+
+    .cake-content {
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 25px;
+      letter-spacing: 0.02em;
+      text-align: left;
+      margin-bottom: 1rem !important;
+    }
+
+    .cake-kg-button {
+      width: 120px;
+      height: 40px;
+      padding: 10px;
+      gap: 10px;
+      border-radius: 8px !important;
+      text-transform: capitalize !important;
+      border: none !important;
+      margin-bottom: 0.5rem !important;
+      margin-right: 0.5rem;
+      background: #fff;
+      color: #000;
+      border: 1px solid #E1E1E1 !important;
+
+      &.active {
+        background: linear-gradient(90deg, #FF1E54 0%, #FF5B83 100%);
+        color: #fff;
+      }
+    }
+
+    .quantity-section {
+      border: 1px solid var(--gray-3);
+      border-radius: 7px;
+
+      svg {
+        color: var(--pink-1);
+        font-size: 14px;
+      }
+
+      .cake-quantity-input {
+        fieldset {
+          border: none;
+        }
+
+        input {
+          text-align: center;
+          width: 20px;
+          padding: 8.5px 5px;
+        }
+      }
+    }
+
+    .cake-form-label {
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 21px;
+      text-align: left;
+
+    }
+  }
+
+  .cake-customization {
+    margin-top: 1rem;
+
+    .title {
+      font-size: 18px;
+      font-weight: 500;
+      line-height: 27px;
+      text-align: left;
+      color: #FF1E54;
+      margin-bottom: 0.5rem;
+    }
+
+    .input-label {
+      font-size: 12px;
+      font-weight: 400;
+      line-height: 2rem;
+      text-align: left;
+      color: #1A1A1A;
+    }
+
+    .share-button {
+      width: 275px;
+      height: 45px;
+      padding: 12px 10px 12px 10px;
+      gap: 10px;
+      border-radius: 8px;
+      border: 1px;
+      color: #FF1E54;
+      border: 2px solid #FF1E54 !important;
+    }
+
+    .add-cart-button {
+      width: 275px;
+      height: 45px;
+      padding: 12px 10px 12px 10px;
+      gap: 10px;
+      border-radius: 8px;
+      border: 1px;
+      color: #fff;
+      background: linear-gradient(90deg, #FF1E54 0%, #FF5B83 100%);
+    }
+
+  }
+
+
+  .order {
+    width: 100% !important;
+    height: 40px;
+    padding: 10px;
+    gap: 10px;
+    border-radius: 8px !important;
+    text-transform: capitalize !important;
+    border: none !important;
+    margin-bottom: 0.5rem !important;
+  }
+
+  .order-button {
+    width: 100px;
+    height: 40px;
+    padding: 10px;
+    gap: 10px;
+    border-radius: 8px !important;
+    text-transform: capitalize !important;
+    margin-bottom: 0.5rem !important;
+
+    &.Cake-weight-above,
+    &.Cake-Qty {
+      background: #fff;
+      color: #000;
+      border: $light-gray !important;
+    }
+  }
+
+  .star {
+    color: $light-gray;
+  }
+}
+
+
+.heading {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 30px;
+  font-weight: bolder;
+  line-height: 1.5;
+}
+
+.original-price {
+  color: grey;
+  text-decoration: line-through;
+  margin-left: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  .cake-menu-item-view {
+    .cake-slider-left {
+      align-items: center;
+    }
+
+    .slick-slider {
+      padding: 2.5rem 0rem !important;
+
+      .slick-track {
+        left: 0rem !important;
+      }
+    }
+
+    .cakecontent-img {
+      width: 100%;
+      height: 200px;
+    }
+
+    .cake-menu-info {
+      margin-top: 2rem;
+      .cake-category {
+        font-size: 16px;
+      }
+
+      .cake-name {
+        font-size: 25px;
+      }
+
+      .cake-price {
+        font-size: 26px;
+      }
+
+      .cake-content {
+        font-size: 14px;
+      }
+
+
+      .cake-kg-button {
+        width: 80px;
+      }
+    }
+  }
+  .heading{
+    font-size: 24px;
+  }
+
+  .product-slider-section{
+    margin-top: 2.5rem;
+  }
+}

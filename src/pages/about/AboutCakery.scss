@@ -1,0 +1,54 @@
+@import "../../assets/styles/variable.scss";
+@import "../../assets/styles/mixins.scss";
+.about_cakery {
+  width: 100%;
+  .wrapper {
+    .left {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      img {
+        object-fit: contain;
+        width: 100%;
+      }
+    }
+    .right {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+
+      .top {
+        display: flex;
+        align-items: baseline;
+        height: fit-content;
+        .title_section {
+          flex: 2;
+          display: flex;
+          flex-direction: column;
+          align-self: flex-end;
+          h4 {
+            font-size: $custom-heading;
+            font-weight: 700;
+            margin-bottom: 0;
+          }
+          img {
+            align-self: center;
+          }
+        }
+        img {
+          flex: 1;
+          height: 60%;
+          align-self: flex-end;
+        }
+      }
+      .desc {
+        padding: 1rem;
+        span {
+          @include gradient-text;
+          font-size: 18px;
+          font-weight: 600;
+        }
+      }
+    }
+  }
+}

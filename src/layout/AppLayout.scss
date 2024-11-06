@@ -1,0 +1,39 @@
+
+.main-component-builder{
+  margin: 3rem auto
+}
+
+.breadcrumbs-section {
+  margin-bottom: 2rem;
+  .MuiBreadcrumbs-li {
+    font-size: 14px;
+    a {
+      text-decoration: none;
+      color: var(--gray-1);
+    }
+    p{
+      color: var(--pink-1);
+      font-size: 14px;
+    }
+  }
+  .MuiBreadcrumbs-separator {
+    svg {
+      color: var(--gray-1);
+      width: 14px;
+    }
+  }
+}
+
+.theme-button{
+  background: linear-gradient(90deg, #FF1E54 0%, #FF5B83 100%);
+  width: 185px;
+  height: 40px;
+  border-radius: 8px !important;
+  text-transform: capitalize !important;
+}
+
+@media screen and (max-width: 768px) {
+  .main-component-builder{
+    margin: 1rem 1rem
+  }
+}
